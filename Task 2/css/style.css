@@ -1,0 +1,38 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap'); */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(circle, rgb(86, 0, 24), black, rgb(86, 0, 24), black, rgb(86, 0, 24), black, rgb(86, 0, 24), black);
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1 {
+    margin: 0;
+    color: white;
+    font-size: 50px;
+    font-family: yasmine;
+    transition: color 0.5s;
+}
+
+h1:hover {
+    color:blue;
+    text-shadow: 5px 5px 10px purple;
+}
+
+/* @font-face {
+    font-family: yasmine;
+    src: url(https://fonts.gstatic.com/s/playwritemx/v4/6xKodSNbKtCe7KfhXg7RYSwoTQ.woff2) format('woff2');
+} */
+
+@font-face {
+    font-family: yasmine;
+    src: url(https://fonts.gstatic.com/s/playwritemx/v4/6xKodSNbKtCe7KfhXg7RYSwoTQ.woff2) format('woff2');
+}

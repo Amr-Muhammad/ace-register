@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html 5 Css 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+TZ:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- <h1>Validation Task</h1> -->
+        <h1>Validation</h1>
+        <div class="form-container">
+            <form>
+                <h2>~ Registration Form ~</h2>
+
+                <div class="input-pair">
+                    <label for="userName">Name</label>
+                    <input pattern="^[a-zA-z]{3,8}$" type="text" name="userName" id="userName"
+                        placeholder="Enter Your Name">
+                    <p>The user name should only contain from 3 to eight alphabetical chars</p>
+                </div>
+
+                <div class="input-pair">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Enter your email adress"
+                        pattern="^[a-zA-Z0-9!#\$%\^&\*\(\)_\-\+=\.]{3,}@[a-zA-z]{2,6}\.[a-zA-z]{2,5}$">
+                    <p>The email adress should be like (username@domainName.TLDomainName)</p>
+                </div>
+
+                <div class="input-pair">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter your phone number"
+                        pattern="^(\+2)?(011|010|015)[0-9]{8}$">
+                    <p>The phone number should be like (01x-8x)</p>
+                </div>
+
+                <div class="input-pair checkbox">
+                    <input type="checkbox" name="agree" id="agreeBox">
+                    <span>I accept terms & conditions</span>
+                </div>
+
+                <button>Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

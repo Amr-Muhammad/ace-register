@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100svh;
+    background: radial-gradient(circle, rgb(13, 0, 32), rgb(58, 18, 0), rgb(13, 0, 32), rgb(58, 18, 0), rgb(13, 0, 32), rgb(58, 18, 0), black);
+    font-family: card;
+}
+
+@font-face {
+    font-family: 'card';
+    font-style: normal;
+    font-weight: 900;
+    src: url(https://fonts.gstatic.com/s/playwritetz/v4/RLp4K5rs6au7bzABmVQAOwnOYA.woff2) format('woff2');
+}
+
+#head {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.container {
+    width: 300px;
+    height: 500px;
+    background: linear-gradient(45deg, white, gray);
+    border: 3px solid chocolate;
+    box-shadow: 0px 0px 25px white;
+    border-radius: 35px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid black;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+#heart {
+    width: 100px;
+    height: 90px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -75%) rotate(180deg);
+}
+
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: black;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+#heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+#topLeft {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 40px;
+    margin: 0;
+    color: black;
+}
+
+#bottomRight {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 40px;
+    margin: 0;
+    color: black;
+}
